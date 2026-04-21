@@ -1,0 +1,144 @@
+@import "theme.css";
+
+* {
+  font-family: "Hack Nerd Font Propo", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12;
+}
+
+window#waybar {
+  background-color: transparent;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#taskbar {
+  background-color: @crust;
+}
+
+#taskbar,
+#taskbar button {
+  border-radius: 5px;
+}
+
+#taskbar button:hover {
+  background-color: @blue;
+}
+
+.niri-taskbar button {
+  border-top: solid 4px transparent;
+  border-bottom: solid 4px transparent;
+}
+
+.niri-taskbar button.unread,
+.niri-taskbar button.urgent {
+  border-top: solid 4px transparent;
+  border-bottom: solid 4px transparent;
+}
+
+#workspaces button {
+  color: @text;
+  background-color: @crust;
+  margin: 0 2px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+  background-color: @surface2;
+}
+
+#workspaces button.active {
+  background-color: @mauve;
+  color: @crust;
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#idle_inhibitor,
+#mpd {
+  padding: 10px;
+  margin: 0 5px;
+  background-color: @crust;
+  color: @text;
+  border-radius: 5px;
+}
+
+#window {
+  color: @yellow;
+  background-color: @crust;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#window,
+#workspaces {
+  margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+@keyframes blink {
+  to {
+    background-color: @text;
+    color: @crust;
+  }
+}
+
+#battery.critical:not(.charging) {
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: @red;
+  color: @base;
+}
+
+#network.disconnected {
+  background-color: @red;
+}
+
+#pulseaudio.muted {
+  color: @pink;
+}
+
+#tray {
+  padding: 0 5px;
+  background-color: @blue;
+  border: 1px solid @teal;
+}
+
+tooltip {
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid @levender;
+  background-color: @crust;
+}
+
+tooltip label {
+  padding: 5px 10px;
+  font-weight: bold;
+  color: @teal;
+}

@@ -1,0 +1,15 @@
+;; Arquivo de configuração do Kanata: kanata.kbd
+
+(defcfg
+process-unmapped-keys yes
+)
+
+(defsrc
+  caps 
+  esc 
+)
+
+(deflayer default
+  esc 
+  caps 
+)
