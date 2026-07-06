@@ -1,3 +1,21 @@
 {
-  "theme": "dark"
+  "theme": "dark",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(rm -fr *)"
+    ],
+    "ask": [
+      "Bash(git push*)",
+      "Bash(git reset --hard*)"
+    ]
+  }
 }
