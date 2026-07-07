@@ -7,7 +7,8 @@
       "Glob",
       "Bash(git status*)",
       "Bash(git diff*)",
-      "Bash(git log*)"
+      "Bash(git log*)",
+      "Bash(ls *)"
     ],
     "deny": [
       "Bash(rm -rf *)",
