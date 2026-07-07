@@ -1,5 +1,9 @@
 {
   "theme": "dark",
+  "statusLine": {
+    "type": "command",
+    "command": "bash /home/erudhir/dotfiles/claude/.claude/statusline.sh"
+  },
   "permissions": {
     "allow": [
       "Read",
