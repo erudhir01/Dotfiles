@@ -1,0 +1,1 @@
+{ "name": "status-band", "version": "0.1.0", "description": "A Catppuccin status band above the prompt: model, folder, git branch, tokens, context %, cost and rate limits.", "types": "./types/index.d.ts" }

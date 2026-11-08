@@ -1,0 +1,1 @@
+{ "name": "topic-colors", "version": "0.2.0", "description": "Highlights questions and warnings in Claude's replies, lists them above the prompt, and tells Claude how to mark them.", "types": "./types/index.d.ts" }

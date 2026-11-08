@@ -3,3 +3,5 @@
 !settings.json
 !statusline.sh
 !statusline.py
+!mods/
+!mods/**
