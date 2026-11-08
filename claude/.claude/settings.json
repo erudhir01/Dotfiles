@@ -18,10 +18,9 @@
       "Bash(git reset --hard*)"
     ]
   },
-  "statusLine": {
-    "type": "command",
-    "command": "bash /home/erudhir/dotfiles/claude/.claude/statusline.sh"
-  },
+  "model": "sonnet",
   "theme": "dark",
-  "model": "sonnet"
+  "enabledPlugins": {
+    "mattpocock-skills@claude-plugins-official": true
+  }
 }
