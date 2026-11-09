@@ -6,7 +6,7 @@ import type { Item, Kind } from '../types'
 const items = atom({ plugin: 'topic-colors', key: 'items' } as const, [] as Item[])
 const isHidden = atom({ plugin: 'topic-colors', key: 'isHidden' } as const, false)
 
-const COLOR: Record<Kind, string> = { critical: 'red', warn: 'yellow', question: '#5f9fff' }
+const COLOR: Record<Kind, string> = { critical: 'red', warn: 'yellow', question: '#ff5fd7' }
 const LABEL: Record<Kind, string> = { critical: 'Crítico', warn: 'Atenção', question: 'Pergunta' }
 
 const MARKERS: readonly { kind: Kind; test: RegExp }[] = [
