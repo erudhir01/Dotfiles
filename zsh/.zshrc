@@ -80,6 +80,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export _JAVA_AWT_WM_NONREPARENTING=1
+export JAVA_HOME=/usr/lib/jvm/default
 
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
   export SDL_VIDEODRIVER=wayland
