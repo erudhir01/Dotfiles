@@ -19,8 +19,18 @@
     ]
   },
   "model": "sonnet",
-  "theme": "dark",
   "enabledPlugins": {
-    "mattpocock-skills@claude-plugins-official": true
-  }
+    "mattpocock-skills@claude-plugins-official": true,
+    "topic-colors@my-mods": true,
+    "status-band@my-mods": true
+  },
+  "extraKnownMarketplaces": {
+    "my-mods": {
+      "source": {
+        "source": "directory",
+        "path": "/home/erudhir/.claude/my-mods"
+      }
+    }
+  },
+  "theme": "dark"
 }
